@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car-Booking</title>
+    <link rel="stylesheet" href="resources/css/Car.css" type="text/css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        type="text/css">
+    <link rel="shortcut icon" type="image/x-icon" href="vendors/favicons/1604154108.ico">
+</head>
+
+<body>
+    <!--Section-1-->
+    <section class="header">
+
+        <div class="container">
+            <a href="Welcome.html"><img src="resources/img/white-logo.png" alt=""></a>
+            <a href="#Chat-Bot"><i class="fa fa-question-circle "></i></a>
+            <a href="Welcome.html" class="login-btn">Register/Login</a>
+            <a href="Hotel.html" class="login-btn">Book Hotel Here<--</a> <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d229085.13091161486!2d78.05081132152269!3d26.
+        214396019087758!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3976c5d1792291fb%3A0xff4fb56d65bc3adf!
+        2sGwalior%2C%20Madhya%20Pradesh!5e0!3m2!1sen!2sin!4v1602864208757!5m2!1sen!2sin" width="600" height="400"
+                    frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0" class="map">
+                    </iframe>
+        </div>
+
+
+
+
+        <div class="wrapper">
+            <input type="text" onFocus="geolocate()" class="input" placeholder="Destination">
+            <input type="text" onFocus="geolocate()" class="input" placeholder="Pick-Up Location">
+            <div class="check-in">
+                <label for="date">Date</label>
+                <input type="date" class="check">
+            </div>
+            <div class="check-out">
+                <label for="date">Time</label>
+                <input type="time" class="check">
+            </div>
+            <div class="room">
+                <label for="number">Peoples</label>
+                <input type="number" class="RCA" value="0" data-placeholder="room">
+            </div>
+
+            <div class="searchbtn"><a href="Payment.html" class="BookNow">Ride Now</a></div>
+        </div>
+
+
+        </div>
+    </section>
+
+    <!--Section-2-->
+
+    <section class="features">
+        <h1>Featured-Cabs</h1>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="feature-box">
+                        <div class="feature-img">
+                            <img src="resources/css/img/City-taxi.jpg" alt="">
+                            <div class="price">
+                                <p>10Rs.</p>
+                            </div>
+                            <div class="rating">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-half-o"></i>
+                                <i class="fa fa-star-o"></i>
+                            </div>
+                        </div>
+                        <div class="feature-details">
+                            <h4>City-Taxi</h4>
+                            <p>The perfect way to get through your everyday travel needs. City-Taxi are available
+                                24x7 and you can book and travel in an instant. with rides starting from as low
+                                as Rs.10/Km, you ccan choose from a wide range of options!</p>
+                            <div>
+                                <span><i class="fa fa-map-marker"></i>10 Rs./Km</span>
+                                <span><i class="fa fa-sun-o"></i></span>
+                                <span><i class="fa fa-moon-o"></i>24x7 Available</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="feature-box">
+                        <div class="feature-img">
+                            <img src="resources/css/img/Outstation.jpg" alt="">
+                            <div class="price">
+                                <p>15Rs.</p>
+                            </div>
+                            <div class="rating">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-half-o"></i>
+                                <i class="fa fa-star-o"></i>
+                            </div>
+                        </div>
+                        <div class="feature-details">
+                            <h4>Outstation</h4>
+                            <p>Ride out of town at affordable one way and round trip fares with H&T Booking.
+                                Choose from a range of AC cabs driven by top partners, available in 1 hour or
+                                book upto 7 days in advance.</p>
+                            <div>
+                                <span><i class="fa fa-map-marker"></i>15 Rs./km</span>
+                                <span><i class="fa fa-sun-o"></i></span>
+                                <span><i class="fa fa-moon-o"></i>24x7 Available</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="feature-box">
+                        <div class="feature-img">
+                            <img src="resources/css/img/Rentals.jpg" alt="">
+                            <div class="price">
+                                <p>7Rs.</p>
+                            </div>
+                            <div class="rating">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-half-o"></i>
+                                <i class="fa fa-star-o"></i>
+                            </div>
+                        </div>
+                        <div class="feature-details">
+                            <h4>Rentals</h4>
+                            <p>With H&T Booking you get a cab at your disposals. So be it a day long business meeting,
+                                a shopping trip with friends or just a day out in a new city.</p>
+                            <div>
+                                <span><i class="fa fa-map-marker"></i>7 Rs./Km</span>
+                                <span><i class="fa fa-sun-o"></i></span>
+                                <span><i class="fa fa-moon-o"></i>24x7 Available</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Section-3-->
+
+    <section class="gallery">
+        <h1>Travel-Gallery</h1>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="gallery-box">
+                        <img src="resources/css/img/Auto-rickshaw.jpg" alt="">
+                        <h4>Auto-rickshaw</h4>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="gallery-box">
+                        <img src="resources/css/img/Mini-car.jpg" alt="">
+                        <h4>Mini-car</h4>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="gallery-box">
+                        <img src="resources/css/img/Macro.jpg" alt="">
+                        <h4>Micro-Car</h4>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="gallery-box">
+                        <img src="resources/css/img/Busses.jpg" alt="">
+                        <h4>Busses</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Section-4-->
+
+    <section class="banner" id="offer">
+        <div class="banner-highlights">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <h2>Choose your top destination</h2>
+                        <p>Book your first ride before 31st December and avail 20% flat discount.</p>
+                    </div>
+                    <div class="col-md-8">
+                        <button type="button" class="booking-btn">Ride Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Section-5-->
+
+    <section class="users-feedback" id="review">
+        <h1>Users-Review</h1>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="user-review">
+                        <p>H&T Booking is one the best travel app in india.i had ride many short and long rides
+                            and come across many drivers.not all were punctual but can trust.bookings are easier
+                            good customer care executive team easy use of app.accurate pickup and drop location.
+                            easy booking for elders.</p>
+                        <h5>Pravel Sharma</h5>
+                        <small>Pune</small>
+                    </div>
+                    <img src="resources/img/user-1.png" alt="">
+                </div>
+
+                <div class="col-md-4">
+                    <div class="user-review">
+                        <p>H&T Booking has been one of the basic requirements during this lockdown where public
+                            transport has
+                            been closed. For a frequent traveller like me, I have to completely depend on H&T Booking
+                            nowadays
+                            for carrying out my activities and to be honest, it hasn't disappointed me yet.</p>
+                        <h5>Abhishek Singh</h5>
+                        <small>Delhi</small>
+                    </div>
+                    <img src="resources/img/user-2.png" alt="">
+                </div>
+                <div class="col-md-4">
+                    <div class="user-review">
+                        <p>Thanks to H&T Booking giving such a nice servicecs in city, it is very help full to
+                            the people who travels in city with groups or individual with irrespective of time like even
+                            at mid night and irrespective of location with the help og gps .</p>
+                        <h5>Anishka Raj</h5>
+                        <small>Gwalior</small>
+                    </div>
+                    <img src="resources/img/user-3.png" alt="">
+                </div>
+            </div>
+        </div>
+        </div>
+        </div>
+    </section>
+
+    <h1>Customer-Support</h1>
+    <iframe allow="microphone;" id="Chat-Bot"
+        src="https://console.dialogflow.com/api-client/demo/embedded/5fc6f735-4df8-4e59-898b-38cc9f5767a3">
+    </iframe>
+
+    <!--Section-6-->
+
+    <section class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <a href="Welcome.html"><img src="resources/img/logo.png" class="footer-logo" alt="logo"></a>
+                    <p>The company with the right fares available 24x7, the one you can
+                        trust and feel secure. we make your journey easy with our best driven partners.</p>
+                </div>
+
+                <div class="col-md-3 footicon">
+                    <h4>Features</h4>
+                    <p><a href="#offer">Deals & Offers</a></p>
+                    <p><a href="#review">Customer Reviews</a></p>
+                    <p><a href="#">Cancellation Policy</a></p>
+                </div>
+
+                <div class="col-md-3 footicon">
+                    <h4>Quick Contact</h4>
+                    <p><a href="#"><i class="fa fa-phone-square"></i> +1 0123456789</a></p>
+                    <p><a href="#"><i class="fa fa-envelope"></i> H&TBooking@gmail.com</a></p>
+                    <p><a href="#"><i class="fa fa-home"></i> AB road, Gwalior CITY </a></p>
+                </div>
+
+                <div class="col-md-3 footicon">
+                    <h4>Follow Us on</h4>
+                    <p><a href="#"><i class="fa fa-facebook-official"></i> Facebook</a></p>
+                    <p><a href="#"><i class="fa fa-youtube-play"></i> YouTube</a></p>
+                    <p><a href="#"><i class="fa fa-twitter"></i> Twitter </a></p>
+                </div>
+            </div>
+            <hr>
+            <p class="Copyright">
+                Copyright &copy; 2020. All rights reserved.
+            </p>
+        </div>
+
+        <div class="scrollTop float-right">
+            <i class="fa fa-arrow-up" onclick="topFunction()" id="myBtn"></i>
+        </div>
+
+        <script>
+            $('.count').counterUp({
+                delay: 10,
+                time: 3000
+            })
+            mybutton = document.getElementById("myBtn");
+
+            window.onscroll = function () {
+                scrollFunction()
+            };
+
+            function scrollFunction() {
+                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                    mybutton.style.display = "block";
+                } else {
+                    mybutton.style.display = "none";
+                }
+            }
+
+            function topFunction() {
+                document.body.scrollTop = 0;
+                document.documentElement.scrollTop = 0;
+            }
+        </script>
+    </section>
+</body>
+
+</html>

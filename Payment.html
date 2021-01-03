@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Payment-Block</title>
+  <link rel="stylesheet" href="resources/css/Payment.css">
+  <link rel="shortcut icon" type="image/x-icon" href="vendors/favicons/1604154108.ico">
+</head>
+
+<body>
+  <h1>Welcome to Payment - Gateway!!!</h1>
+  <h2>Pay through any card or bank easily and safely.</h2>
+  <a href="Welcome.html"><img src="resources/img/logo.png" class="logo" alt="logo"></a>
+
+
+
+  <div class="checkout_form">
+    <div class="card_number" id="card-container">
+      <input type="text" class="input" id="card" placeholder="0000 0000 0000 0000">
+      <div id="logo"></div>
+    </div>
+    <div class="card_grp">
+      <div class="expiry_date">
+        <input type="text" class="expiry_input" data-mask="00" placeholder="mm">
+        <input type="text" class="expiry_input" data-mask="00" placeholder="yy">
+      </div>
+      <div class="cvc">
+        <input type="text" class="cvc_input" data-mask="000" placeholder="000">
+        <div class="cvc_img">
+          ?
+          <div class="img">
+            <img src="https://i.imgur.com/2ameC0C.png" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="btn">
+      pay
+    </div>
+
+    <input type="checkbox" class="check-box"><span>I agree to the terms & conditions</span>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
+  <script src="resources/js/card-validator.js"></script>
+</body>
+
+</html>

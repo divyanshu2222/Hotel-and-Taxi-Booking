@@ -1,0 +1,214 @@
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel & Taxi Booking Server</title>
+    <link rel="stylesheet" href="resources/css/Welcome.css">
+    <link rel="stylesheet" type="text/css" href="vendors/css/ionicons.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" type="image/x-icon" href="vendors/favicons/1604154108.ico">
+</head>
+
+<!------------------------------HEADER PAGE------------------------------------>
+
+<body onload="slider()">
+    <div class="main">
+        <div class="banner">
+            <div class="slider">
+                <img src="resources/css/img/Outstation.jpg" id="slideImg">
+            </div>
+
+            <div class="overlay">
+
+                <div class="navbar">
+                    <div class="logo">
+                        <img src="resources/img/white-logo.png" alt="logo">
+                    </div>
+
+                    <div class="menu-icons">
+                        <ul class="main-nav">
+                            <li><a href="Welcome.html">Home</a></li>
+                            <li><a>About</a>
+                                <ul>
+                                    <li><a href="#Team-work">Our Team</a></li>
+                                    <li><a href="#Team-work">Our Work</a></li>
+                                </ul>
+                            </li>
+
+                            <li><a>Contact</a>
+                                <ul>
+                                    <li><a href="mailto:H&TBooking@gmail.com">Email</a></li>
+                                    <li><a href="tel:+1234567890">Help-desk</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="https://www.google.com/search?biw=1366&bih=665&tbm=nws&sxsrf=ALeKk02-lzDl_
+                                PperR4cENkCMMh8mgyVyw%3A1603540695231&ei=1xaUX9bODb-P4-EP8-6V-AQ&q=+google+news&oq=+
+                                google+news&gs_l=psy-ab.3..0l10.9540.29219.0.30006.24.17.3.4.4.0.281.3011.0j5j9.14.0....
+                                0...1c.1.64.psy-ab..3.19.2630.0..0i13k1j0i10k1.0.8evZ-SBfaIs">Updates</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+
+                <div class="content">
+                    <h1>LET'S START TO EXPLORE THE WORLD</h1>
+
+                    <div class="book-now">
+                        <a href="#scroll" class="js--scroll-to-forms">Book Now &#8594; </a>
+                        <!--   <button type="button" class="btn-2">About Us</button>  -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            var slideImg = document.getElementById("slideImg");
+            var images = new Array(
+                "resources/css/img/Outstation.jpg",
+                "resources/css/img/hotel-1.jpg",
+                "resources/css/img/taxi4.jpg",
+                "resources/css/img/hotel-2.jpg",
+                "resources/css/img/city-taxi.jpg",
+                "resources/css/img/hotel-3.jpg",
+                "resources/css/img/busses.jpg",
+                "resources/css/img/hotel-4.jpg"
+            );
+            var len = images.length; //It stores the length of the array
+            var i = 0;
+
+            function slider() {
+                if (i > len - 1) {
+                    i = 0;
+                }
+                slideImg.src = images[i];
+                i++;
+                setTimeout('slider()', 3000);
+            }
+        </script>
+
+        <!------------------------------FORM PAGE------------------------------------>
+        <section class="login-img" id="scroll">
+            <div class="row">
+                <h2>We're Happy To Make Your Journey Easy</h2>
+            </div>
+
+            <div class="section-form js--section-forms">
+                <div class="button-box">
+                    <div id="btn"></div>
+                    <button type="button" class="toggle-btn" onclick="login()">Login</button>
+                    <button type="button" class="toggle-btn" onclick="register()">Register</button>
+                </div>
+                <div class="social-icons">
+                    <img src="vendors/fonts/fb.png" alt="Facebook">
+                    <img src="vendors/fonts/gp.png" alt="Google">
+                    <img src="vendors/fonts/tw.png" alt="Twitter">
+                </div>
+                <form action="" id="login" class="input-group" id="#scroll">
+                    <input type="text" class="input-field" placeholder="User Id" required>
+                    <input type="password" class="input-field" placeholder="Enter Password" required>
+                    <input type="checkbox" class="check-box"><span>Remember Password</span>
+                    <button type="submit" class="submit-btn">Log in</button>
+                </form>
+                <form action="" id="register" class="input-group" id="#scroll">
+                    <input type="text" class="input-field" placeholder="User Id" required>
+                    <input type="email" class="input-field" placeholder="Email Id" required>
+                    <input type="password" class="input-field" placeholder="Enter Password" required>
+                    <input type="checkbox" class="check-box"><span>I agree to the terms & conditions</span>
+                    <button type="submit" class="submit-btn">Register</button>
+                </form>
+            </div>
+        </section>
+
+
+        <script>
+            var x = document.getElementById("login");
+            var y = document.getElementById("register");
+            var z = document.getElementById("btn");
+
+            function register() {
+                x.style.left = "-400px";
+                y.style.left = "50px";
+                z.style.left = "110px";
+            }
+
+            function login() {
+                x.style.left = "50px";
+                y.style.left = "450px";
+                z.style.left = "0";
+            }
+        </script>
+
+        <!------------------------------FOOTER PAGE------------------------------------>
+        <footer id="Team-work">
+            <a href="Welcome.html"><img src="resources/img/white-logo.png" class="footer-logo" alt="logo"></a>
+            <div class="row">
+                <div class="col span-1-of-2">
+                    <ul class="footer-nav">
+                        <ul>
+                            <li><a href="Welcome.html">OurTeam:</a></li>
+                            <p>
+                                <li><a href="mailto:divyanshubuddy.2000@gmai.com">Divyanshu Gupta 69</a></li>
+                                <li><a href="mailto:divyanshukumar1980@gmail.com">Divyanshu Kumar 71</a></li>
+                                <li><a href="mailto:divyanshu.1708gupta@gmailcom">Divyanshu Gupta 70</a></li>
+                                <li><a href="mailto:ggarima0109@gmail.com">Garima Gupta 76</a></li>
+                            </p>
+                        </ul>
+
+                        <ul>
+                            <li><a href="Welcome.html">Our Work:</a></li>
+                            <p>
+                                <li><a href="Hotel.html">Hotel-Booking</a></li>
+                                <li><a href="Car.html">Taxi-Booking</a></li>
+                            </p>
+                        </ul>
+                    </ul>
+                </div>
+
+                <div class="col span-1-of-2">
+                    <ul class="social-links">
+                        <li><a href="#"><i class="ion-social-facebook"></i></a></li>
+                        <li><a href="#"><i class="ion-social-twitter"></i></a></li>
+                        <li><a href="#"><i class="ion-social-googleplus"></i></a></li>
+                        <li><a href="#"><i class="ion-social-instagram"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <hr>
+                <p>
+                    Copyright &copy; 2020. All rights reserved.
+                </p>
+            </div>
+
+            <div class="scrollTop float-right">
+                <i class="fa fa-arrow-up" onclick="topFunction()" id="myBtn"></i>
+            </div>
+
+            <script>
+                $('.count').counterUp({
+                    delay: 10,
+                    time: 3000
+                })
+                mybutton = document.getElementById("myBtn");
+
+                window.onscroll = function () {
+                    scrollFunction()
+                };
+
+                function scrollFunction() {
+                    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                        mybutton.style.display = "block";
+                    } else {
+                        mybutton.style.display = "none";
+                    }
+                }
+
+                function topFunction() {
+                    document.body.scrollTop = 0;
+                    document.documentElement.scrollTop = 0;
+                }
+            </script>
+        </footer>
+    </div>
+</body>
+
+</html>

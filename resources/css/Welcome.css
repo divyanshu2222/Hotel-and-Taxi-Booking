@@ -1,0 +1,408 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.banner {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.slider {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+}
+
+#slideImg {
+    width: 100%;
+    height: 100%;
+    animation: zoom 3s linear infinite;
+}
+
+@keyframes zoom {
+
+    0% {
+        transform: scale(1.3);
+    }
+
+    15% {
+        transform: scale(1);
+    }
+
+    85% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(1.3);
+    }
+}
+
+.overlay {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8));
+    position: absolute;
+    top: 0;
+}
+
+.navbar {
+    width: 85%;
+    display: flex;
+    align-items: center;
+    margin: 35px auto;
+}
+
+.menu-icons {
+    margin-left: 100px;
+}
+
+.logo {
+    flex-basis: 15%;
+}
+
+.logo img {
+    width: 120px;
+    cursor: pointer;
+}
+
+.main-nav {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+.main-nav li {
+    float: left;
+    width: 180px;
+    height: 40px;
+    background-color: rgba(128, 128, 128, 0.589);
+    opacity: .8;
+    line-height: 40px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.main-nav li a {
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    cursor: pointer;
+}
+
+.main-nav li a:hover {
+    background-color: #e67e22;
+}
+
+.main-nav li ul li {
+    display: none;
+}
+
+.main-nav li:hover ul li {
+    display: block;
+}
+
+.content {
+    width: 60%;
+    margin: 160px auto 0;
+    text-align: center;
+    color: #f4f4f4;
+}
+
+.content h1 {
+    font-size: 60px;
+    margin-bottom: 60px;
+}
+
+.book-now a {
+    width: 200px;
+    padding: 15px 40px;
+    text-decoration: none;
+    font-weight: bold;
+    border: 2px solid #e67e22;
+    border-radius: 25px;
+    background: #e67e22;
+    color: #fff;
+    transition: background 0.5s;
+}
+
+.book-now a:hover {
+    background: transparent;
+    border: 2px solid #cf6d17;
+    box-shadow: 0 0 10px #cf6d17;
+    color: #e67e22;
+}
+
+.row {
+    margin-top: 60px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 180%;
+    word-spacing: 2px;
+    text-align: center;
+    margin-bottom: 60px;
+    letter-spacing: 1px;
+    color: #fff;
+}
+
+h2::after {
+    display: block;
+    height: 2px;
+    background-color: #e67e22;
+    content: " ";
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 30px;
+
+}
+
+/*--------------------------FORM PAGE------------------------------*/
+
+.login-img {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(img/hotel-hero.jpg);
+    background-size: cover;
+    padding-bottom: 1px;
+    padding-top: 2px;
+    color: #fff;
+    background-attachment: fixed;
+
+}
+
+.section-form {
+    width: 380px;
+    height: 480px;
+    position: relative;
+    margin: 6% auto;
+    background-color: rgba(128, 128, 128, 0.589);
+    opacity: .8;
+    padding: 5px;
+    overflow: hidden;
+}
+
+.button-box {
+    width: 220px;
+    margin: 35px auto;
+    position: relative;
+    border-radius: 30px;
+    color: #fff;
+}
+
+.toggle-btn {
+    padding: 10px 30px;
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    outline: none;
+    position: relative;
+    color: #fff;
+
+
+}
+
+#btn {
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 110px;
+    height: 100%;
+    background: linear-gradient(to right, #e67e22, #e67e22);
+    border-radius: 30px;
+    transition: .5s;
+}
+
+.social-icons {
+    margin: 30px auto;
+    text-align: center;
+}
+
+.social-icons img {
+    width: 30px;
+    margin: 0 12px;
+    box-shadow: 0 0 20px 0 #454;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.input-group {
+    top: 180px;
+    position: absolute;
+    width: 280px;
+    transition: .5s;
+}
+
+.input-field {
+    width: 100%;
+    padding: 10px 0;
+    margin: 5px 0;
+    border-left: 0;
+    border-top: 0;
+    border-right: 0;
+    border-bottom: 2px solid #999;
+    outline: none;
+    background: transparent;
+}
+
+.submit-btn {
+    width: 85%;
+    padding: 10px 30px;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+    color: #fff;
+    background: #e67e22;
+    border: 0;
+    outline: none;
+    border-radius: 30px;
+}
+
+.submit-btn:hover {
+    background: #a5540d;
+    color: #fff;
+    border: 1px solid #a5540d;
+    transition-delay: 0.2s;
+}
+
+.check-box {
+    margin: 30px 10px 30px 0;
+}
+
+span {
+    color: #fff;
+    font-size: 12px;
+    bottom: 68px;
+    position: absolute;
+}
+
+#login {
+    left: 50px;
+}
+
+#register {
+    left: 450px;
+}
+
+/*--------------------------FOOTER PAGE------------------------------*/
+
+footer {
+    background-color: #333;
+    padding: 10px;
+    font-size: 80%;
+}
+
+.footer-logo {
+    float: left;
+}
+
+.footer-nav {
+    list-style: none;
+
+}
+
+.social-links {
+    list-style: none;
+    float: right;
+}
+
+.footer-nav li,
+.social-links li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.footer-nav li:last-child,
+.social-links li:last-child {
+    margin-right: 0;
+}
+
+.footer-nav li a:link,
+.footer-nav li a:visited,
+.social-links li a:link,
+.social-links li a:visited {
+    text-decoration: none;
+    border: 0;
+    color: #888;
+    transition: color 0.2s;
+}
+
+.footer-nav li a:hover,
+.footer-nav li a:active {
+    color: #ddd;
+}
+
+.social-links li a:link,
+.social-links li a:visited {
+    font-size: 160%;
+}
+
+.ion-social-facebook,
+.ion-social-twitter,
+.ion-social-googleplus,
+.ion-social-instagram {
+
+    transition: color 0.2s;
+}
+
+.ion-social-facebook:hover {
+    color: #3b5998;
+}
+
+.ion-social-twitter:hover {
+    color: #1da1f2;
+}
+
+.ion-social-googleplus:hover {
+    color: #db4437;
+}
+
+.ion-social-instagram:hover {
+    color: #c32aa3;
+}
+
+footer p {
+    color: #888;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/*Scroll*/
+
+#myBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 25px;
+    z-index: 99;
+    border: none;
+    color: #fff;
+    background: #8b8b8b;
+    padding: 4px;
+    border-radius: 10px;
+}
+
+#myBtn:hover {
+    background: #5e2525;
+    cursor: pointer;
+}
+
+/*
+html,
+body{
+    background-color: #ffffff; 
+    color: #555555;                             
+    font-family: 'Lato', 'Arial', sans-serif;  
+    font-size: 20px;                          
+    font-weight: 300;                         
+    text-rendering: optimizeLegibility;        
+    overflow-x: hidden;
+}
+*/

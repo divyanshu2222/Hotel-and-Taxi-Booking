@@ -1,2 +1,2 @@
 # Hotel-and-Taxi-Booking  ----> PBL Project
-This is the frontend work of hotel and taxi booking web page made with the help of HTML and CSS, Bootstrap and some jQuery.
+This is my Pbl project, Hotel-and-Taxi-Booking, which was created using HTML5, CSS3, Bootstrap, and a little jQuery. It's only the project's front-end work.
